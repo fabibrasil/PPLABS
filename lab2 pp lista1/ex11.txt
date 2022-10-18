@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 11
+int main()
+{
+    float kmh, ms;
+    printf("Digite uma velocidade em m/s: \n");
+    scanf("%f", &ms);
+    kmh = ms*3.6;
+    printf("A velocidade em km/h eh:%f", kmh);
+    return 0;
+}

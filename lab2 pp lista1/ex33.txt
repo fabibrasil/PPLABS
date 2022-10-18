@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 33
+int main()
+{
+    int lado, area;
+    printf("Digite o tamanho do lado de um quadrado: \n");
+    scanf("%d",&lado);
+    area = lado*lado;
+    printf("A area do quadrado eh: %d \n", area);
+    return 0;
+}

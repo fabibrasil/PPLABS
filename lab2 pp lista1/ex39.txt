@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 39
+int main()
+{
+    float primeiro, segundo, terceiro;
+    primeiro = 780000*0.46;
+    segundo = 780000*0.32;
+    terceiro = 780000*0.22;
+    printf("O primeiro ganhador recebera: %f reais \n", primeiro);
+    printf("O segundo ganhador recebera: %f reais \n", segundo);
+    printf("O terceiro ganhador recebera: %f reais", terceiro);
+    return 0;
+}

@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 44
+int main()
+{
+    float degrau, altura, qnt_degraus;
+    printf("Digite a altura do degrau de uma escada: \n");
+    scanf("%f", &degrau);
+    printf("Digite a altura total que o usuario deseja alcancar: \n");
+    scanf("%f", &altura);
+    qnt_degraus = altura/degrau;
+    printf("A quantidade total de degraus a ser subida eh: %f", qnt_degraus);
+    return 0;
+}

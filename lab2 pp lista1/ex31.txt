@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 31
+int main()
+{
+    int n1, x, y;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&n1);
+    x = n1 + 1;
+    y = n1 - 1;
+    printf("O valor do seu antecessor eh: %d \n", y);
+    printf("O valor do seu sucessor eh: %d", x);
+    return 0;
+}

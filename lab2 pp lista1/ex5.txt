@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 5
+int main ()
+{
+   float n1, divisao;
+   printf("Digite um numero real: \n");
+   scanf("%f", &n1);
+   divisao = (n1/5);
+   printf("A quinta parte do numero escolhido eh: %f! ",divisao );
+   return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 27
+int main()
+{
+    float m2, hec;
+    printf("Digite uma area em hectares: \n");
+    scanf("%f",&hec);
+    m2 = hec*10000;
+    printf("O comprimento em metros quadrados eh:%f", m2);
+    return 0;
+}

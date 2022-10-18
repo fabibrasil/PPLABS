@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 43
+int main()
+{
+    float valor, a_vista, parcelado, comissao_a_vista, comissao_parcelado;
+    printf("Digite o valor de um produto: \n");
+    scanf("%f", &valor);
+    a_vista = valor*0.9;
+    parcelado = valor/3;
+    comissao_a_vista = a_vista*0.05;
+    comissao_parcelado = valor*0.05;
+    printf("O total a pagar a vista eh: %f reais \n", a_vista);
+    printf("O valor de cada parcela, dividido em tres vezes eh: %f reais \n", parcelado);
+    printf("A comissao da venda a vista eh: %f reais \n", comissao_a_vista);
+    printf("A comissao da venda parcelada eh: %f reais", comissao_parcelado);
+    return 0;
+}

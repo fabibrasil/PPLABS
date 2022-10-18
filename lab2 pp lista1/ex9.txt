@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 9
+int main ()
+{
+   float ctemp, ktemp;
+   printf("Digite uma temperatura em graus Celsius: \n");
+   scanf("%f", &ctemp);
+   ktemp = ctemp + 273.15;
+   printf("A temperatura em graus Kelvin eh: %f! ",ktemp );
+   return 0;
+}

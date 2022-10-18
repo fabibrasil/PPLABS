@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 35
+int main()
+{
+    float a, b, hip;
+    printf("Digite os valores dos catetos de um triangulo retangulo: \n");
+    scanf("%f %f",&a, &b);
+    hip = sqrt(a*a + b*b);
+    printf("O valor da hipotenusa eh: %f \n", hip);
+    return 0;
+}

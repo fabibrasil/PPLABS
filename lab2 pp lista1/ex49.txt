@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 49
+int main()
+{
+  int hora, minuto, segundo, tempo_segundos, duracao, tempo_final, resto;
+  printf("Digite o horario de inicio: ");
+  scanf("%d:%d:%d", &hora, &minuto, &segundo);
+  printf("Digite a duracao em segundos: ");
+  scanf("%d", &duracao);
+
+  tempo_segundos = horario_em_segundos(hora, minuto, segundo);
+  tempo_final = tempo_segundos + duracao;
+
+  hora = (tempo_final - (tempo_final % 3600)) / 3600;
+  resto = tempo_final % 3600;
+  minuto = (resto - (resto % 60)) / 60;
+  resto = resto % 60;
+  tempo_final = resto;
+
+  printf("O horario de termino eh as %d hora(s), %d minuto(s) e %d segundo(s)", hora, minuto, tempo_final);
+
+  return 0;
+}
+
+int horario_em_segundos(int hour, int minute, int second)
+{
+  return hour * 3600 + minute * 60 + second;
+}

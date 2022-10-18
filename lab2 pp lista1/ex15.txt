@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 15
+int main()
+{
+    float graus, rad, pi;
+    printf("Digite um angulo em radianos: \n");
+    scanf("%f", &rad);
+    pi = 3.141592;
+    graus = rad*180/pi;
+    printf("O angulo em graus eh:%f", graus);
+    return 0;
+}

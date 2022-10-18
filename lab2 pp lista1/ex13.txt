@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 13
+int main()
+{
+    float km, milha;
+    printf("Digite uma distancia em quilometros: \n");
+    scanf("%f", &km);
+    milha = km/1.61;
+    printf("A distancia em milhas eh:%f", milha);
+    return 0;
+}

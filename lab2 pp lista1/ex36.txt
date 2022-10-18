@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 36
+int main()
+{
+    float altura, raio, volume, pi;
+    printf("Digite os valores da altura e raio de um cilindro: \n");
+    scanf("%f %f",&altura, &raio);
+    pi = 3.141592;
+    volume = pi*raio*raio*altura;
+    printf("O valor do volume do cilindro eh: %f \n", volume);
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 53
+int main()
+{
+  float c, l, metro, custo;
+  printf("Digite o comprimento do terreno: \n");
+  scanf("%f", &c);
+  printf("Digite a largura do terreno: \n");
+  scanf("%f", &l);
+  metro = 10;
+  custo = (2*c + 2*l)*10;
+  printf("O custo para cercar o terreno com tela eh: %f", custo);
+  return 0;
+}

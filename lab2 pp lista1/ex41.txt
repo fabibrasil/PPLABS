@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 41
+int main()
+{
+    int horas_trabalhadas;
+    float hora_de_trab, total;
+    printf("Digite o valor da hora de trabalho: \n");
+    scanf("%f", &hora_de_trab);
+    printf("Digite a quantidade de horas trabalhadas no mes: \n");
+    scanf("%d", &horas_trabalhadas);
+    total = (horas_trabalhadas*hora_de_trab)*1.1;
+    printf("O valor a ser pago para o funcionario eh: %f reais \n", total);
+    return 0;
+}

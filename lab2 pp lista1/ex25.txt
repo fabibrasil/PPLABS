@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 25
+int main()
+{
+    float m2, acre;
+    printf("Digite uma area em acres: \n");
+    scanf("%f",&acre);
+    m2 = acre*4048.58;
+    printf("O comprimento em metros quadrados eh:%f", m2);
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 16
+int main()
+{
+    float pol, cm;
+    printf("Digite um comprimento em polegadas: \n");
+    scanf("%f", &pol);
+    cm = pol*2.54;
+    printf("O comprimento em centimetros eh:%f", cm);
+    return 0;
+}

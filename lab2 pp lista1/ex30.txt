@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 30
+int main()
+{
+    float real, dolar;
+    printf("Digite um valor em real: \n");
+    scanf("%f",&real);
+    dolar = real/5.29;
+    printf("O valor em dolar eh:%f", dolar);
+    return 0;
+}

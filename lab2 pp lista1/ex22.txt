@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 22
+int main()
+{
+    float jardas, metro;
+    printf("Digite um comprimento em jardas: \n");
+    scanf("%f",&jardas);
+    metro = jardas*0.91;
+    printf("O comprimento em metros eh:%f", metro);
+    return 0;
+}

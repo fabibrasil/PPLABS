@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 40
+int main()
+{
+    int dias;
+    float imposto, total, liquido;
+    printf("Digite o numero de dias trabalhados pelo encanador: \n");
+    scanf("%d", &dias);
+    total = 30*dias;
+    imposto = total*0.08;
+    liquido = total-imposto;
+    printf("O valor liquido a ser pago para o encanador eh: %f reais \n", liquido);
+    return 0;
+}

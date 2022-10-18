@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 20
+int main()
+{
+    float kg, libra;
+    printf("Digite uma massa em quilogramas: \n");
+    scanf("%f",&kg);
+    libra = kg/0.45;
+    printf("A massa em libras eh:%f", libra);
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 7
+int main ()
+{
+   float ctemp, ftemp;
+   printf("Digite uma temperatura em graus Farenheit: \n");
+   scanf("%f", &ftemp);
+   ctemp = 5*(ftemp - 32)/9;
+   printf("A temperatura em graus Celsius eh: %f! ",ctemp );
+   return 0;
+}

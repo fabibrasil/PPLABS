@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 18
+int main()
+{
+    float m3, litro;
+    printf("Digite um volume em metros cubicos: \n");
+    scanf("%f",&m3);
+    litro = m3*1000;
+    printf("O volume em litros eh:%f", litro);
+    return 0;
+}
