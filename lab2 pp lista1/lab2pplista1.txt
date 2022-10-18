@@ -1,0 +1,857 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 1
+int main ()
+{
+    int n1;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&n1);
+    printf("O numero digitado foi %d!", n1);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 2
+int main ()
+{
+   float n2;
+   printf("Digite um numero real: \n");
+   scanf("%f",&n2);
+   printf("O numero digitado foi %f!", n2);
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 3
+int main ()
+{
+   int n1, n2, n3,soma;
+   printf("Digite tres valores inteiros: \n");
+   scanf("%d %d %d", &n1, &n2, &n3);
+   soma = (n1+n2+n3);
+   printf("A soma dos numeros escolhidos foi: %d! ",soma );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 4
+int main ()
+{
+   float n1, quadrado;
+   printf("Digite um numero real: \n");
+   scanf("%f", &n1);
+   quadrado = (n1*n1);
+   printf("O quadrado no numero escolhido eh: %f! ",quadrado );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 5
+int main ()
+{
+   float n1, divisao;
+   printf("Digite um numero real: \n");
+   scanf("%f", &n1);
+   divisao = (n1/5);
+   printf("A quinta parte do numero escolhido eh: %f! ",divisao );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 6
+int main ()
+{
+   float ctemp, ftemp;
+   printf("Digite uma temperatura em graus Celsius: \n");
+   scanf("%f", &ctemp);
+   ftemp = ctemp*9/5+32;
+   printf("A temperatura em graus Farenheit eh: %f! ",ftemp );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 7
+int main ()
+{
+   float ctemp, ftemp;
+   printf("Digite uma temperatura em graus Farenheit: \n");
+   scanf("%f", &ftemp);
+   ctemp = 5*(ftemp - 32)/9;
+   printf("A temperatura em graus Celsius eh: %f! ",ctemp );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 8
+int main ()
+{
+   float ctemp, ktemp;
+   printf("Digite uma temperatura em graus Kelvin: \n");
+   scanf("%f", &ktemp);
+   ctemp = ktemp - 273.15;
+   printf("A temperatura em graus Celsius eh: %f! ",ctemp );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 9
+int main ()
+{
+   float ctemp, ktemp;
+   printf("Digite uma temperatura em graus Celsius: \n");
+   scanf("%f", &ctemp);
+   ktemp = ctemp + 273.15;
+   printf("A temperatura em graus Kelvin eh: %f! ",ktemp );
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 10
+int main()
+{
+    float kmh, ms;
+    printf("Digite uma velocidade em km/h: \n");
+    scanf("%f", &kmh);
+    ms = kmh/3.6;
+    printf("A velocidade em m/s eh:%f", ms);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 11
+int main()
+{
+    float kmh, ms;
+    printf("Digite uma velocidade em m/s: \n");
+    scanf("%f", &ms);
+    kmh = ms*3.6;
+    printf("A velocidade em km/h eh:%f", kmh);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 12
+int main()
+{
+    float km, milha;
+    printf("Digite uma distancia em milhas: \n");
+    scanf("%f", &milha);
+    km = milha*1.61;
+    printf("A distancia em km eh:%f", km);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 13
+int main()
+{
+    float km, milha;
+    printf("Digite uma distancia em quilometros: \n");
+    scanf("%f", &km);
+    milha = km/1.61;
+    printf("A distancia em milhas eh:%f", milha);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 14
+int main()
+{
+    float graus, rad, pi;
+    printf("Digite um angulo em graus: \n");
+    scanf("%f", &graus);
+    pi = 3.141592;
+    rad = graus*pi/180;
+    printf("O angulo em radianos eh:%f", rad);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 15
+int main()
+{
+    float graus, rad, pi;
+    printf("Digite um angulo em radianos: \n");
+    scanf("%f", &rad);
+    pi = 3.141592;
+    graus = rad*180/pi;
+    printf("O angulo em graus eh:%f", graus);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 16
+int main()
+{
+    float pol, cm;
+    printf("Digite um comprimento em polegadas: \n");
+    scanf("%f", &pol);
+    cm = pol*2.54;
+    printf("O comprimento em centimetros eh:%f", cm);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 17
+int main()
+{
+    float pol, cm;
+    printf("Digite um comprimento em centimetros: \n");
+    scanf("%f",&cm);
+    pol = cm/2.54;
+    printf("O comprimento em polegadas eh:%f", pol);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 18
+int main()
+{
+    float m3, litro;
+    printf("Digite um volume em metros cubicos: \n");
+    scanf("%f",&m3);
+    litro = m3*1000;
+    printf("O volume em litros eh:%f", litro);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 19
+int main()
+{
+    float m3, litro;
+    printf("Digite um volume em litros: \n");
+    scanf("%f",&litro);
+    m3 = litro/1000;
+    printf("O volume em metros cubicos eh:%f", m3);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 20
+int main()
+{
+    float kg, libra;
+    printf("Digite uma massa em quilogramas: \n");
+    scanf("%f",&kg);
+    libra = kg/0.45;
+    printf("A massa em libras eh:%f", libra);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 21
+int main()
+{
+    float kg, libra;
+    printf("Digite uma massa em libras: \n");
+    scanf("%f",&libra);
+    kg = libra*0.45;
+    printf("A massa em quilogramas eh:%f", kg);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 22
+int main()
+{
+    float jardas, metro;
+    printf("Digite um comprimento em jardas: \n");
+    scanf("%f",&jardas);
+    metro = jardas*0.91;
+    printf("O comprimento em metros eh:%f", metro);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 23
+int main()
+{
+    float jardas, metro;
+    printf("Digite um comprimento em metro: \n");
+    scanf("%f",&metro);
+    jardas = metro/0.91;
+    printf("O comprimento em jardas eh:%f", jardas);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 24
+int main()
+{
+    float m2, acre;
+    printf("Digite uma area em metros quadrados: \n");
+    scanf("%f",&m2);
+    acre = m2*0.000247;
+    printf("O comprimento em acres eh:%f", acre);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 25
+int main()
+{
+    float m2, acre;
+    printf("Digite uma area em acres: \n");
+    scanf("%f",&acre);
+    m2 = acre*4048.58;
+    printf("O comprimento em metros quadrados eh:%f", m2);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 26
+int main()
+{
+    float m2, hec;
+    printf("Digite uma area em metros quadrados: \n");
+    scanf("%f",&m2);
+    hec = m2*0.0001;
+    printf("O comprimento em hectares eh:%f", hec);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 27
+int main()
+{
+    float m2, hec;
+    printf("Digite uma area em hectares: \n");
+    scanf("%f",&hec);
+    m2 = hec*10000;
+    printf("O comprimento em metros quadrados eh:%f", m2);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 28
+int main()
+{
+    int n1, n2, n3, x, y, z;
+    printf("Digite tres valores inteiros: \n");
+    scanf("%d %d %d", &n1, &n2, &n3);
+    x = n1*n1;
+    y = n2*n2;
+    z = n3*n3;
+    printf("A soma dos quadrados dos numeros digitados eh:%d", x + y + z);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 29
+int main()
+{
+    float n1, n2, n3, n4, media;
+    printf("Digite quatro notas: \n");
+    scanf("%f %f %f %f",&n1,&n2,&n3,&n4);
+    media = (n1+n2+n3+n4)/4;
+    printf("A media aritmetica das notas eh:%f", media);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 30
+int main()
+{
+    float real, dolar;
+    printf("Digite um valor em real: \n");
+    scanf("%f",&real);
+    dolar = real/5.29;
+    printf("O valor em dolar eh:%f", dolar);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 31
+int main()
+{
+    int n1, x, y;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&n1);
+    x = n1 + 1;
+    y = n1 - 1;
+    printf("O valor do seu antecessor eh: %d \n", y);
+    printf("O valor do seu sucessor eh: %d", x);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 32
+int main()
+{
+    int n1, x, y;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d",&n1);
+    x = (3*n1 + 1);
+    y = (2*n1 - 1);
+    printf("x + y eh igual a: %d \n", x+y);
+    return 0;
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 33
+int main()
+{
+    int lado, area;
+    printf("Digite o tamanho do lado de um quadrado: \n");
+    scanf("%d",&lado);
+    area = lado*lado;
+    printf("A area do quadrado eh: %d \n", area);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 34
+int main()
+{
+    float raio, area, pi;
+    printf("Digite o valor do raio de um circulo: \n");
+    scanf("%f",&raio);
+    pi = 3.141592;
+    area = pi*raio*raio;
+    printf("A area do circulo eh: %f \n", area);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 35
+int main()
+{
+    float a, b, hip;
+    printf("Digite os valores dos catetos de um triangulo retangulo: \n");
+    scanf("%f %f",&a, &b);
+    hip = sqrt(a*a + b*b);
+    printf("O valor da hipotenusa eh: %f \n", hip);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 36
+int main()
+{
+    float altura, raio, volume, pi;
+    printf("Digite os valores da altura e raio de um cilindro: \n");
+    scanf("%f %f",&altura, &raio);
+    pi = 3.141592;
+    volume = pi*raio*raio*altura;
+    printf("O valor do volume do cilindro eh: %f \n", volume);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 37
+int main()
+{
+    float produto, desconto;
+    printf("Digite o valor de um produto que recebera 12% de desconto: \n");
+    scanf("%f",&produto);
+    desconto = produto*0.88 ;
+    printf("O valor do produto com o desconto eh: %f \n", desconto);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 38
+int main()
+{
+    float salario, novo_salario;
+    printf("Digite o valor do salario de um funcionario: \n");
+    scanf("%f",&salario);
+    novo_salario = salario*1.25 ;
+    printf("O valor do novo salario do funcionario eh: %f \n", novo_salario);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 39
+int main()
+{
+    float primeiro, segundo, terceiro;
+    primeiro = 780000*0.46;
+    segundo = 780000*0.32;
+    terceiro = 780000*0.22;
+    printf("O primeiro ganhador recebera: %f reais \n", primeiro);
+    printf("O segundo ganhador recebera: %f reais \n", segundo);
+    printf("O terceiro ganhador recebera: %f reais", terceiro);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 40
+int main()
+{
+    int dias;
+    float imposto, total, liquido;
+    printf("Digite o numero de dias trabalhados pelo encanador: \n");
+    scanf("%d", &dias);
+    total = 30*dias;
+    imposto = total*0.08;
+    liquido = total-imposto;
+    printf("O valor liquido a ser pago para o encanador eh: %f reais \n", liquido);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 41
+int main()
+{
+    int horas_trabalhadas;
+    float hora_de_trab, total;
+    printf("Digite o valor da hora de trabalho: \n");
+    scanf("%f", &hora_de_trab);
+    printf("Digite a quantidade de horas trabalhadas no mes: \n");
+    scanf("%d", &horas_trabalhadas);
+    total = (horas_trabalhadas*hora_de_trab)*1.1;
+    printf("O valor a ser pago para o funcionario eh: %f reais \n", total);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 42
+int main()
+{
+    float salario, imposto, gratificacao, novo_salario;
+    printf("Digite o salario-base de um funcionario: \n");
+    scanf("%f", &salario);
+    imposto = salario*0.07;
+    gratificacao = salario*1.05;
+    novo_salario = gratificacao-imposto;
+    printf("O novo salario eh: %f reais \n", novo_salario);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 43
+int main()
+{
+    float valor, a_vista, parcelado, comissao_a_vista, comissao_parcelado;
+    printf("Digite o valor de um produto: \n");
+    scanf("%f", &valor);
+    a_vista = valor*0.9;
+    parcelado = valor/3;
+    comissao_a_vista = a_vista*0.05;
+    comissao_parcelado = valor*0.05;
+    printf("O total a pagar a vista eh: %f reais \n", a_vista);
+    printf("O valor de cada parcela, dividido em tres vezes eh: %f reais \n", parcelado);
+    printf("A comissao da venda a vista eh: %f reais \n", comissao_a_vista);
+    printf("A comissao da venda parcelada eh: %f reais", comissao_parcelado);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 44
+int main()
+{
+    float degrau, altura, qnt_degraus;
+    printf("Digite a altura do degrau de uma escada: \n");
+    scanf("%f", &degrau);
+    printf("Digite a altura total que o usuario deseja alcancar: \n");
+    scanf("%f", &altura);
+    qnt_degraus = altura/degrau;
+    printf("A quantidade total de degraus a ser subida eh: %f", qnt_degraus);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 45
+int main()
+{
+    char letra;
+    printf("Digite uma letra maiuscula: \n");
+    scanf("%c", &letra);
+    printf("A letra minuscula eh: %c", letra+32);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 46
+int main()
+{
+    int n1, n2;
+    printf("Digite um numero inteiro de tres digitos: \n");
+    scanf("%d", &n1);
+    n2 = (n1%10)*100;
+    n1 = n1/10;
+    n2 = n2+(n1%10)*10;
+    n1 = n1/10;
+    n2 = n2+n1;
+    printf("O seu numero invertido eh: %d",n2);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 47
+int main()
+{
+    int n1;
+    printf("Digite um numero inteiro de quatro digitos: \n");
+    scanf("%d", &n1);
+    printf("%d\n", n1/1000);
+    printf("%d\n", (n1%1000)/100);
+    printf("%d\n", (n1%100)/10);
+    printf("%d\n", n1%10);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 48
+int main()
+{
+    int seg, horas, min, resto;
+    printf("Digite um valor em segundos: \n");
+    scanf("%d", &seg);
+    horas = (seg-(seg%3600))/3600;
+    resto = seg%3600;
+    min = (resto-(resto%60))/60;
+    resto = resto%60;
+    seg = resto;
+    printf("%d horas, %d minutos, %d segundos", horas, min, seg);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 49
+int main()
+{
+  int hora, minuto, segundo, tempo_segundos, duracao, tempo_final, resto;
+  printf("Digite o horario de inicio: ");
+  scanf("%d:%d:%d", &hora, &minuto, &segundo);
+  printf("Digite a duracao em segundos: ");
+  scanf("%d", &duracao);
+
+  tempo_segundos = horario_em_segundos(hora, minuto, segundo);
+  tempo_final = tempo_segundos + duracao;
+
+  hora = (tempo_final - (tempo_final % 3600)) / 3600;
+  resto = tempo_final % 3600;
+  minuto = (resto - (resto % 60)) / 60;
+  resto = resto % 60;
+  tempo_final = resto;
+
+  printf("O horario de termino eh as %d hora(s), %d minuto(s) e %d segundo(s)", hora, minuto, tempo_final);
+
+  return 0;
+}
+
+int horario_em_segundos(int hour, int minute, int second)
+{
+  return hour * 3600 + minute * 60 + second;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 50
+int main()
+{
+  int idade, ano_atual, ano_nascimento;
+  printf("Digite a sua idade: \n");
+  scanf("%d", &idade);
+  printf("Digite o ano atual: \n");
+  scanf("%d", &ano_atual);
+  ano_nascimento = ano_atual-idade;
+  printf("Seu ano de nascimento eh: %d", ano_nascimento);
+  return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 51
+int main()
+{
+  float x, y, distancia;
+  printf("Digite as coordenadas x e y: \n");
+  scanf("%f %f", &x, &y);
+  distancia = sqrt(x*x + y*y);
+  printf("A distancia do ponto a origem eh: %f", distancia);
+  return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 52
+int main()
+{
+  float premio, v1,v2,v3, p1, p2, p3;
+  premio = 1000;
+  printf("O valor do premio eh de 1000 reais\n");
+  v1 = 1;
+  v2 = 3;
+  v3 = 6;
+  printf("O primeiro amigo investiu: %f real\n", v1);
+  printf("O segundo amigo investiu: %f reais\n", v2);
+  printf("O terceiro amigo investiu: %f reais\n", v3);
+  p1 = premio/10;
+  p2 = 3*premio/10;
+  p3 = 6*premio/10;
+  printf("O primeiro amigo recebera: %f\n", p1);
+  printf("O segundo amigo recebera: %f\n", p2);
+  printf("O terceiro amigo recebera: %f", p3);
+  return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 53
+int main()
+{
+  float c, l, metro, custo;
+  printf("Digite o comprimento do terreno: \n");
+  scanf("%f", &c);
+  printf("Digite a largura do terreno: \n");
+  scanf("%f", &l);
+  metro = 10;
+  custo = (2*c + 2*l)*10;
+  printf("O custo para cercar o terreno com tela eh: %f", custo);
+  return 0;
+}
