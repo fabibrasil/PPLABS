@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 13
+
+int main()
+{
+    float nota1, nota2, nota3, media;
+    printf("Digite as tres notas, cada nota possuindo, no maximo, 100 pontos: \n");
+    scanf("%f %f %f", &nota1, &nota2, &nota3);
+    media = (nota1 + nota2 + (2*nota3))/4;
+    printf("Sua media foi: %f\n", media);
+    if (media >= 60) {
+     printf("Voce foi aprovado!");
+    }
+    else {
+       printf("Voce foi reprovado.");
+    }
+
+return 0;
+}

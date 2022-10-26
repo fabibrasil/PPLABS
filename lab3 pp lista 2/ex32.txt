@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 32
+
+int main()
+{
+    int x;
+    float y;
+
+    printf("Escolha um produto do cardapio e digite seu codigo: \n");
+    printf("100 - Cachorro Quente\n");
+    printf("101 - Bauru Simples\n");
+    printf("102 - Bauru com ovo\n");
+    printf("103 - Hamburguer\n");
+    printf("104 - Cheeseburguer\n");
+    printf("105 - Suco\n");
+    printf("106 - Refrigerante\n");
+    scanf("%d", &x);
+
+    if (x == 100){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.2);
+    }
+    else if (x == 101){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.3);
+    }
+    else if (x == 102){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.5);
+    }
+    else if (x == 103){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.2);
+    }
+    else if (x == 104){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.7);
+    }
+    else if (x == 105){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*2.2);
+    }
+    else if (x == 106){
+        printf("Digite a quantidade: \n");
+        scanf("%f", &y);
+        printf("Total a pagar: %f", y*1.0);
+    }
+    else{
+        printf("Codigo incorreto.");
+    }
+
+    return 0;
+}

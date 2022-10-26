@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 36
+
+int main()
+{
+
+  float venda, comissao;
+
+  printf("Digite a venda mensal: \n");
+  scanf("%f", &venda);
+
+  if (venda >= 100000){
+    comissao = (0.16*venda)+700;
+    printf("A comissao eh: %f", comissao);
+  }
+
+  else if (venda >= 80000 && venda < 100000){
+    comissao = (0.14*venda)+650;
+    printf("A comisso eh: %f", comissao);
+  }
+
+  else if (venda >= 60000 && venda < 80000){
+    comissao = (0.14*venda)+600;
+    printf("A comissao eh: %f", comissao);
+  }
+
+  else if (venda >= 40000 && venda < 60000){
+    comissao = (0.14*venda)+550;
+    printf("A comissao eh: %f",comissao);
+  }
+
+  else if (venda >= 20000 && venda < 40000){
+    comissao = (0.14*venda)+500;
+    printf("A comissao eh: %f", comissao);
+  }
+
+  else if (venda < 20000){
+    comissao = (0.14*venda)+400;
+    printf("A comissao eh: %f", comissao);
+  }
+    return 0;
+}

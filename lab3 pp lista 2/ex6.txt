@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//exercicio 6
+
+int main()
+{
+    int x, y,w, z;
+    printf("Digite dois numeros inteiros: \n");
+    scanf("%d %d", &x, &y);
+    if (x>y) {
+        printf("%d eh maior que %d \n", x,y);
+        w = (x-y);
+        printf("A diferenca entre os numeros eh: %d\n", w);
+    }
+    else {
+        if (x<y){
+            printf("%d eh maior que %d \n", y, x);
+            z = (y-x);
+            printf("A diferença entre os numeros eh: %d\n", z);
+        }
+        else {
+            printf("O numero eh invalido");
+        }
+    }
+        return 0;
+}

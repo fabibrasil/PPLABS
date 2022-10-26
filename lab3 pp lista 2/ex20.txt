@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 20
+
+int main()
+{
+    int a, b, c;
+
+    printf("Digite tres numeros inteiros: \n");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a < b + c && b < a + c && c < a + b){
+        printf("Os numeros podem ser lados de um triangulo! \n");
+
+
+        if (a == b && b == c && a == c)
+        printf("O triangulo eh equilatero \n");
+
+        else if (a == b !=c || a == c !=b || b == c != a)
+        printf("O o triangulo eh isosceles");
+
+        else
+        printf("O triangulo eh escaleno");
+    }
+    else {
+        printf("Os numeros nao podem ser lados de um triangulo");
+    }
+return 0;
+}

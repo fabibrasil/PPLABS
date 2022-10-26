@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 26
+
+int main()
+{
+    float km, litros, consumo;
+
+    printf("Digite a distancia percorrida: \n");
+    scanf("%f", &km);
+
+    printf("Digite a quantidade de gasolina consumida, em litros: \n");
+    scanf("%f", &litros);
+
+    consumo = km/litros;
+
+    if (consumo < 8){
+        printf("Venda o carro!");
+    }
+    else if(consumo >= 8 && consumo <= 14){
+        printf("Economico!");
+    }
+    else if(consumo > 14){
+        printf("Super economico!");
+    }
+
+return 0;
+}

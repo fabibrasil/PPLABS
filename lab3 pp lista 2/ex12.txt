@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 12
+
+int main()
+{
+    int num;
+    printf("Digite um numero inteiro: \n");
+    scanf("%d", &num);
+    if (num > 0) {
+     printf("O logaritimo do numero eh: %f\n", log10(num));
+    }
+    else {
+       printf("Numero invalido");
+    }
+
+return 0;
+}

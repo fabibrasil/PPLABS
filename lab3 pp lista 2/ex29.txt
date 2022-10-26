@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 29
+
+int main()
+{
+     int num1, num2, resposta, acertos = 0;
+
+    srand(time(NULL));
+
+    for (int i = 0; i < 5; i++)
+    {
+        num1 = rand() % 100 + 1;
+        num2 = rand() % 100 + 1;
+
+        printf("Qual é a soma de %d + %d? ", num1, num2);
+        scanf("%d", &resposta);
+
+        if (resposta == num1 + num2)
+        {
+            printf("Resposta correta!\n");
+            acertos++;
+        }
+        else printf("Resposta incorreta!\n");
+    }
+
+    printf("Você acertou %d questões.", acertos);
+
+return 0;
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 14
+
+int main()
+{
+    float lab, avaliacao, exame, media;
+    printf("Digite as tres notas, cada nota possuindo, no maximo, 10 pontos: \n");
+    scanf("%f %f %f", &lab, &avaliacao, &exame);
+    media = ((2*lab) + (3*avaliacao) + (5*exame))/10;
+    printf("Sua media foi: %f\n", media);
+    if (media >= 5.0) {
+     printf("Voce foi aprovado!");
+    }
+    else {
+       if (media >= 3 && media <=4.9){
+        printf("Voce esta de recuperacao!");
+       }
+       else {
+        printf("Voce foi reprovado.");
+       }
+       }
+
+
+return 0;
+}

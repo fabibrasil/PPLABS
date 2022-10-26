@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//exercicio 4
+
+int main()
+{
+    float x, y, z;
+    printf("Digite um numero real: \n");
+    scanf("%f", &x);
+    if (x>0) {
+        y = sqrt(x);
+        z = (x*x);
+        printf("A raiz quadrada de %f eh: %f \n", x, y);
+        printf("%f ao quadrado eh: %f \n",x, z);
+    }
+    else {
+        printf("O numero invalido");
+    }
+    return 0;
+}

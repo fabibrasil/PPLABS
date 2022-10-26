@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 1
+int main()
+{
+    float x, y;
+    printf("Digite dois numeros inteiros: \n");
+    scanf("%f %f", &x, &y);
+    if (x>y) {
+        printf("%f eh maior que %f", x, y);
+    }
+    else {
+        printf("%f eh menor ou igual a %f", x, y);
+    }
+    return 0;
+}

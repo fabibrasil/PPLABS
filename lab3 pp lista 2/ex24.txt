@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 24
+
+int main()
+{
+   float valor;
+   char ch;
+
+   printf("Digite o valor do produto: \n");
+   scanf("%f", &valor);
+
+   printf("Digite o numero correspondente ao seu Estado: \n");
+   printf("1 - Minas Gerais\n");
+   printf("2 - Sao Paulo\n");
+   printf("3 - Rio de Janeiro\n");
+   printf("4 - Mato Grosso do Sul\n");
+   scanf(" %c", &ch);
+
+   if(ch == '1'){
+    printf("O preco final do produto eh: %f", (valor*0.07)+valor);
+   }
+
+   else if(ch == '2'){
+    printf("O preco final do produto eh: %f", (valor*0.12)+valor);
+   }
+
+   else if(ch == '3'){
+    printf("O preco final do produto eh: %f", (valor*0.15)+valor);
+   }
+
+   else if(ch == '4'){
+    printf("O preco finao do produto eh: %f", (valor*0.08)+valor);
+   }
+return 0;
+}

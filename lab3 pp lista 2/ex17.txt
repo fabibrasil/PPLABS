@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 17
+
+int main()
+{
+    float bmaior, bmenor, altura, area;
+
+    printf("Digite os valores da base menor, base maior e altura de um trapezio: %f\n");
+
+    scanf("%f %f %f", &bmaior, &bmenor, &altura);
+
+    area = (bmaior + bmenor)*altura/2;
+
+    printf("Sua area eh: %f", area);
+
+return 0;
+}

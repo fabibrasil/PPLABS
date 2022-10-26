@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+//exercicio 18
+
+int main()
+{
+    float w, z;
+    char ch;
+
+    printf("Escolha uma das operacoes, + (adicao), - (subtracao), x (multiplicacao), / (divisao) e digite o caracter escolhido (+, -, x ou /): \n");
+
+    scanf("%c", &ch);
+
+    if (ch == '+') {
+        printf("Digite dois numeros: \n");
+        scanf("%f %f", &w, &z);
+        printf("A soma dos valores eh: %f", w + z);
+    }
+    else if (ch == '-'){
+            printf("Digite dois numeros: \n");
+            scanf("%f %f", &w, &z);
+            printf("A diferenca dos valores eh: %f", w - z);
+
+    }
+    else if (ch == 'x'){
+        printf("Digite dois numeros: \n");
+        scanf("%f %f", &w, &z);
+        printf("A multiplicacao dos dois valores eh: %f", w*z);
+    }
+    else if (ch == '/'){
+        printf("Digite dois numeros: \n");
+        scanf("%f %f", &w, &z);
+        printf("A divisao dos dois valores eh: %f", w/z);
+    }
+    else{
+        printf("Dados invalidos");
+    }
+
+return 0;
+}
