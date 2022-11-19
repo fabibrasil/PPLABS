@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 2 pt.1
+*/
+
+int main()
+{
+    int x, numero = 0;
+
+    for (x = 1; x <=100; x++){
+        numero = numero + 1;
+        printf("%d\n", numero);
+    }
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 2 pt.2
+*/
+
+int main()
+{
+    int x;
+
+    while (x <=99){
+        x = x + 1;
+        printf("%d\n", x);
+    }
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 2 pt.3
+*/
+
+int main()
+{
+    int x;
+    x = 1;
+
+   do{
+    x = x + 1;
+    printf("%d\n", x);
+   } while (x <= 99);
+
+    return 0;
+}
+

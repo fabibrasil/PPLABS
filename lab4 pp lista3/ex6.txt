@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 6
+*/
+
+int main()
+{
+    float media, n, soma = 0;
+    printf("Digite 10 numeros para fazer a media: \n");
+
+    for(n = 1; n <= 10;n++){
+        float n;
+        scanf("%f",&n);
+        soma = soma + n;
+        media = soma/10;
+    }
+
+    printf("A media eh igual a %f", media);
+
+  return 0;
+}

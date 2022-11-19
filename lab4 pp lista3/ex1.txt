@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 1
+*/
+
+int main()
+{
+    int x, numero = 0;
+
+    for (x = 1; x <=5; x++){
+        numero = numero + 3;
+        printf("%d\n", numero);
+    }
+
+    return 0;
+}

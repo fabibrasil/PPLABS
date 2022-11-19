@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+/*
+exercicio15
+*/
+
+int main() {
+    int value;
+    printf("Digite um numero: ");
+    scanf("%d", &value);
+
+    while (value > 0) {
+
+        printf("O quadrado de %d e %d\n", value, value * value);
+        printf("O cubo de %d e %d\n", value, value * value * value);
+        printf("A raiz quadrada de %d e %f\n", value, sqrt(value));
+        printf("Digite um valor: ");
+        scanf("%d", &value);
+
+    }
+
+    system("pause");
+    return 0;
+}

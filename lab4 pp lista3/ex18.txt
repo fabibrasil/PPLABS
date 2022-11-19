@@ -1,0 +1,19 @@
+#include <stdio.h>
+/*
+exercicio 18
+*/
+
+int main(){
+    float salario = 2000;
+    double aumento = 0.015;
+    int ano = 1995;
+    while(ano < 2023){
+        salario += salario * aumento;
+        aumento *= 2;
+        ano++;
+        printf("%0.2f\n", aumento);
+
+    }
+        printf("Salario no ano %d: %lf\n",ano, salario);
+    return 0;
+}

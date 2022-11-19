@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/*
+exercicio 16
+*/
+
+int main (){
+    float a, s, m, d, x, y;
+    int z;
+do{
+    do{
+        printf("Adicao (opcao 1)\nSubtracao (opcao 2)\nMultiplicacao (opcao 3)\nDivisao (opcao 4)\nSaida (opcao 5)\n");
+        scanf("%d", &z);
+        
+        if ((z != 1)&&(z != 2)&&(z != 3)&&(z != 4)&&(z != 5)){
+            printf("INVALIDO");
+        }
+    }
+
+    while ((z < 1 && z > 5));
+        if (z == 1){
+            printf("Digite dois valores:\n");
+            scanf("%f %f", &x, &y);
+            a = x + y;
+            printf("A soma eh:\n %.2f \n", a);
+        }
+        if (z == 2){
+            printf("Digite dois valores:\n");
+            scanf("%f %f", &x, &y);
+            if (x > y){
+                s = x - y;
+                printf("A subtracao eh:\n %.2f \n", s);
+            }
+            else{
+                s = y - x;
+                printf("A subtracao eh:\n %.2f \n", s);
+            }
+        }
+        if (z == 3){
+            printf("Digite dois valores:\n");
+            scanf("%f %f", &x, &y);
+            m = x * y;
+            printf("A multiplicacao eh:\n %.2f \n", m);
+        }
+        if (z == 4){
+            printf("Digite dois valores:\n");
+            scanf("%f %f", &x, &y);
+            if (x > y){
+                d = x / y;
+                printf("A divisao eh:\n %.2f \n", d);
+            }
+            else{
+                s = y / x;
+                printf("A divisao eh:\n %.2f \n", d);
+            }
+        }
+        if (z == 5){
+            printf("SAIDA\n");
+        }
+}
+while (z != 5);
+
+system("pause");
+return 0;
+}

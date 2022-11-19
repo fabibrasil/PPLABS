@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+/*
+exercicio 17
+*/
+
+int main (){
+    int Ze = 110, Chico = 150, a = 0;
+
+    while (Ze <= Chico){
+        Ze = Ze + 3;
+        Chico = Chico + 2;
+        a++;
+    }
+    printf ("Ze sera maior que Chico daqui a: %d anos\n", a + 1);
+
+system("pause");
+return 0;
+}

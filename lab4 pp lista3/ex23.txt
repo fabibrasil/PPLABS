@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+/*
+exercicio 23
+*/
+
+int main (){
+    int li, c, x;
+    int y = 1;
+    printf("Digite a quantidade de linhas desejadas:\n");       
+    scanf("%d", &li);
+    for (x = 1; x <= li; x++){
+        for (c = 1; c <= x; c++){
+            printf(" %d ", y);
+            y++;
+        }
+        printf("\n");
+    }
+
+system("pause");        
+return 0;
+}  

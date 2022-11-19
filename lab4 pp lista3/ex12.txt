@@ -1,0 +1,24 @@
+#include <stdio.h>
+/*
+exercicio 12
+*/
+
+int main() {
+    int x;
+    printf("Digite um numero: ");
+    scanf("%d", &x);
+
+    int i = 1;
+    int sum = 0;
+    while (i < x) {
+        if (x % i == 0) {
+            sum += i;
+        }
+        i++;
+    }
+
+    printf("A soma dos divisores de %d e %d\n", x, sum);
+
+    system("pause");
+    return 0;
+}

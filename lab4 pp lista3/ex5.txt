@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+exercicio 5
+*/
+
+int main()
+{
+    int soma = 0, n;
+    printf("Digite 10 numeros para somar: \n");
+
+    for(n = 1; n <= 10;n++){
+        int n;
+        scanf("%d", &n);
+        soma = soma + n;
+    }
+
+    printf("Soma igual a %d", soma);
+
+  return 0;
+}

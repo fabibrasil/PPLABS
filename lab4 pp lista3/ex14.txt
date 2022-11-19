@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/*
+exercicio 14
+*/
+
+int main (){
+    int d1, d2, i, x;
+    printf("Digite quantas vezes o dado sera jogado:\n");
+    scanf("%d", &x);
+    srand(time(NULL));
+
+    for (i = 1; i <= x; i++){
+        d1 = (rand() % 5) + 1;
+        d2 = (rand() % 5) + 1;
+    
+        if (d1 > d2){
+        printf("%d maior que %d\n", d1, d2);
+        }
+        else if (d2 > d1){
+        printf("%d maior que %d\n", d2, d1);
+        }
+        else if (d1 == d2){
+        printf("%d e %d iguais\n", d1, d2);
+        }
+    }
+
+system("pause");
+return 0;
+}
