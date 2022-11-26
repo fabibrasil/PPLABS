@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+/*
+exercicio 9
+*/
+
+float volume(float altura, float raio);
+
+int main(){
+    float altura, raio;
+    printf("Digite os valores da altura e do raio: ");
+    scanf("%f%f", &altura, &raio);
+
+    printf("O volume do cilindro eh: %f", volume(altura, raio));
+
+    return 0;
+}
+
+float volume(float altura, float raio){
+    float pi = 3.141592;
+    return pi*raio*raio*altura;
+}

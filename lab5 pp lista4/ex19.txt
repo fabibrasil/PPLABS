@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 19
+
+
+int fatorial(int n);
+
+int main(){
+    int n;
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &n);
+
+    printf("O fatorial de %d eh: %d", n, fatorial(n));
+
+    return 0;
+}
+
+int fatorial(int n){
+    if(n == 0)
+        return 1;
+
+    else{
+        int i;
+        int f = 1;
+        for(i = 1; i <= n; i++)
+            f = f*i;
+            return f;
+
+    }
+
+}

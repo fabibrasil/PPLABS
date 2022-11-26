@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+//exercicio 10
+
+int numeromaior(int a, int b);
+
+int main(){
+    int a, b;
+    printf("Digite dois numeros: ");
+    scanf("%d%d", &a, &b);
+
+    printf("%d", numeromaior(a,b));
+
+    return 0;
+}
+
+int numeromaior(int a, int b){
+    if(a > b){
+        return a;
+    }
+    else{
+        return b;
+    }
+}

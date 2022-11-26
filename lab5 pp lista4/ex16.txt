@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 16
+
+void desenha_linha(int linhas);
+
+int main(){
+    int linhas;
+
+    printf("Digite o numero de '=' desejado: \n");
+    scanf("%d", &linhas);
+
+    desenha_linha(linhas);
+
+    return 0;
+}
+
+void desenha_linha(int linhas){
+    int i;
+    for(i = 1; i <= linhas; i++){
+        printf("=");
+    }
+    printf("\n");
+}

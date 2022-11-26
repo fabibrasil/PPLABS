@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+/*
+exercicio 8
+*/
+
+float pitagoras(float a, float b);
+
+int main(){
+    float a, b;
+    printf("Digite os valores dos catetos: ");
+    scanf("%f%f", &a, &b);
+
+    printf("O valor da hipotenusa eh: %f", pitagoras(a,b));
+    return 0;
+}
+
+float pitagoras(float a, float b){
+    return sqrt((a*a)+(b*b));
+}

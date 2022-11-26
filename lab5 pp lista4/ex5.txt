@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+exercicio 5
+*/
+
+float VolumeEsfera (float raio);
+
+int main(){
+    float raio, pi;
+    printf("Digite o valor do raio: \n");
+    scanf("%f", &raio);
+
+    VolumeEsfera(raio);
+
+    return 0;
+}
+
+float VolumeEsfera (float raio){
+    float vol, pi;
+    pi = 3.14;
+    vol = 4*(pi*raio*raio)/3;
+    printf("O volume da esfera eh: %f", vol);
+}

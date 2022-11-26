@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+//exercicio 11
+
+float media(float x, float y, float z, char letra);
+
+int main(){
+    float x, y, z;
+    char letra;
+
+    printf("Digite as tres notas e A ou P: \n");
+    scanf("%f %f %f %c", &x, &y, &z, &letra);
+
+    printf("Media: %.2f", media(x, y, z, letra));
+
+    return 0;
+}
+
+float media(float x, float y, float z, char letra){
+    float m;
+    if(letra == 'A'){
+        m = (x+y+z)/3.0;
+        return m;
+    }
+    else if (letra == 'P'){
+        m = ((x*5.0)+(3.0*y)+(2.0*z))/10.0;
+        return m;
+    }
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+exercicio 2
+*/
+
+void data(int dia, int mes, int ano){
+const char* meses[] = {"Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+
+    printf("Data: %d de %s de %d", dia, meses[mes-1], ano);
+}
+
+int main(){
+int dia,mes, ano;
+
+
+printf("Insira o dia: \n");
+scanf("%d", &dia);
+printf("Insira o mes: \n");
+scanf("%d", &mes);
+printf("Insira o ano: \n");
+scanf("%d", &ano);
+
+data(dia, mes, ano);
+
+return 0;
+}

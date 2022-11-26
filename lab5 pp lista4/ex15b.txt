@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 15b
+
+int triangulo(int a, int b, int c);
+
+int main(){
+    int a, b,c;
+    printf("Digite tres valores maiores do que 0: \n");
+    scanf("%d %d %d", &a, &b, &c);
+
+    triangulo(a,b,c);
+
+    return 0;
+}
+
+int triangulo(int a, int b, int c){
+    if(a == b == c){
+        printf("Triangulo Equilatero!");
+    }
+    else if(a == b || a == c || b == c){
+        printf("Triangulo Isosceles!");
+    }
+    else{
+        printf("Triangulo Escaleno");
+    }
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 15a
+
+int triangulo(int a, int b, int c);
+
+int main(){
+    int a, b,c;
+    printf("Digite tres valores maiores do que 0: \n");
+    scanf("%d %d %d", &a, &b, &c);
+
+    triangulo(a,b,c);
+
+    return 0;
+}
+
+int triangulo(int a, int b, int c){
+    if(a < b+c && b < a+c && c < a+b){
+        printf("Os tres valores formam um triangulo!");
+    }
+    else{
+        printf("Os valores nao formam um triangulo.");
+    }
+}

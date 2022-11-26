@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 14
+
+int consumo(int km, int litro);
+
+int main(){
+    int km, litro;
+
+    printf("Digite a quantidade de quilometros rodados: \n");
+    scanf("%d", &km);
+
+    printf("Digite a quantidade de litros: \n");
+    scanf("%d", &litro);
+
+    consumo(km,litro);
+
+    return 0;
+}
+
+int consumo(int km, int litro){
+    float con;
+    con = km/litro;
+
+    if(con < 8){
+        printf("Venda o carro!");
+    }
+    else if(con > 8 && con < 14){
+        printf("Economico!");
+    }
+    else if(con > 14){
+        printf("Super economico!");
+    }
+}

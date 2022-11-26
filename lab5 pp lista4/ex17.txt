@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 17
+
+int soma(int x, int y){
+    int i, j, k, l = 0;
+    if(x > y){
+        j = x;
+        k = y;
+    }else{
+        j = y;
+        k = x;
+    }
+    for(i = k + 1; i < j; i++){
+        l = l + i;
+    }
+    return l;
+}
+
+int main(){
+    int x ,y, resultado;
+
+    do{
+   		printf("Digite dois numeros inteiros positivos: \n");
+    	scanf("%d %d",&x,&y);
+    }while(x < 0 || y < 0);
+    	resultado = soma(x,y);
+    	printf("Resultado: %d\n",resultado);
+
+    system("pause");
+    return 0;
+}

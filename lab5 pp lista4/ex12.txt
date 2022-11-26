@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+//exercicio 12
+
+int soma(int num);
+
+int main(){
+    int num;
+    printf("Digite um numero maior que 0: \n");
+    scanf("%d", &num);
+
+    printf("A soma dos numeros eh: %d", soma(num));
+
+    return 0;
+}
+
+int soma(int num){
+    int resultado  = num, soma = 0;
+
+    do{
+        int x = resultado%10;
+        resultado = (resultado - x)/10;
+        soma += x;
+    } while (resultado > 0);
+    return soma;
+}

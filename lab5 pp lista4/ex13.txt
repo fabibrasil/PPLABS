@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 13
+
+float operacao(float x, float y, char op);
+
+int main(){
+    float x, y;
+    char op;
+
+    printf("Digite dois numeros: \n");
+    scanf("%f %f", &x, &y);
+
+    printf("Digite +, -, * ou /: \n");
+    scanf(" %c", &op);
+
+    printf("Operacao: %f", operacao(x,y,op));
+
+    return 0;
+}
+
+float operacao(float x, float y, char op){
+    if(op == '+'){
+        return (x+y);
+    }
+    else if(op == '-'){
+        return (x-y);
+    }
+    else if(op == '*'){
+        return (x*y);
+    }
+    else if(op == '/'){
+        return (x/y);
+    }
+}

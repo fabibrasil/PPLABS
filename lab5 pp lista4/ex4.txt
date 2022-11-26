@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/*
+exercicio 4
+*/
+
+float quadradoperfeito (float x);
+
+int main(){
+float num;
+printf("Digite um numero: \n");
+scanf("%f", &num);
+
+num = quadradoperfeito(num);
+return 0;
+}
+
+float quadradoperfeito(float x){
+    int y;
+    y = sqrt(x);
+
+    if((y*y) == x){
+        printf("Eh um quadrado perfeito");
+    }
+    else{
+        printf("Nao eh um quadrado perfeito");
+    }
+
+}
