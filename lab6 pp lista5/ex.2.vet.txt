@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 2 - vetores
+
+int main()
+{
+    int vet[8];
+    int x, y, i;
+
+    for(i = 0; i < 8; i++){
+        printf("Digite o elemento da posicao %d: ", i);
+        scanf("%d", &vet[i]);
+    }
+    printf("Digite um numero x dentro do vetor: \n");
+    scanf("%d", &x);
+    printf("Digite um numero y dentro do vetor: \n");
+    scanf("%d", &y);
+    printf("A soma de x e y eh: %d", x+y);
+
+return 0;
+}

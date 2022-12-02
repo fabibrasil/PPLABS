@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 8 - vetores
+
+int main()
+{
+    int i, j, valor, vet[10];
+    for(i = 0; i < 10; i++){
+        printf("Digite o elemento da casa %d: ", i);
+        scanf("%d", &valor);
+        int existe = 0;
+    for (int j = 0; j < i; j++)
+    {
+      if (vet[j] == valor)
+      {
+        existe = 1;
+        break;
+      }
+    }
+    if (existe)
+    {
+      i--;
+      continue;
+    }
+    vet[i] = valor;
+  }
+  for (int i = 0; i < 10; i++)
+  {
+    printf("%d\n", vet[i]);
+  }
+  return 0;
+}

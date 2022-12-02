@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 4 - matrizes
+
+int main()
+{
+    int mat[5][5], i, j, x, linha = 0, coluna = 0, existe = 0;
+
+    for(i = 0; i < 5; i++){
+        for(j = 0; j < 5; j++){
+            printf("Digite o elemento da linha %d e coluna %d: \n", i, j);
+            scanf("%d", &mat[i][j]);
+        }
+    }
+    printf("Digite um valor x: \n");
+    scanf("%d", &x);
+        for(i = 0; i < 5; i++){
+            for(j = 0; j < 5; j++){
+                if(mat[i][j] == x){
+                    linha = i;
+                    coluna = j;
+                    existe = 1;
+                }
+            }
+        }
+        if(existe){
+            printf("O valor de x se localiza na linha %d e coluna %d", linha, coluna);
+        }
+        else{
+            printf("Valor nao encontrado");
+        }
+        return 0;
+    }

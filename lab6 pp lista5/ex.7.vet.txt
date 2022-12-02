@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 7 - vetores
+
+int main()
+{
+    int i, somapar = 0, qtdimpar = 0, vet[6];
+    for(i = 0; i < 6; i++){
+        printf("Digite o elemento da casa %d: \n", i);
+        scanf("%d", &vet[i]);
+    }
+     for (int i = 0; i < 6; i++)
+  {
+    if (vet[i] % 2 == 0)
+    {
+      printf("Par: %d\n", vet[i]);
+      somapar += vet[i];
+    }
+    else
+    {
+      printf("Impar: %d\n", vet[i]);
+      qtdimpar++;
+    }
+  }
+  printf("Soma dos pares: %d\n", somapar);
+  printf("Quantidade de impares: %d\n", qtdimpar);
+  return 0;
+}

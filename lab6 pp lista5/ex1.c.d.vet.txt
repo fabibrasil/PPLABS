@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 1)b) e c) - vetores
+
+int main()
+{
+    int A[6] = {1,0,5,-2,100,7};
+    int i;
+
+    for(i = 0; i < 6;i++){
+        printf("%d\n", A[i]);
+    }
+    return 0;
+}

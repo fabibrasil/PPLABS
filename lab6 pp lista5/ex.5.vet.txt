@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 5 - vetores
+
+int main()
+{
+    int i, vet[50];
+    for(i = 0; i < 50; i++){
+        vet[i] = (i+5*i)%(i+1);
+    }
+    for(i = 0; i < 50; i++){
+    printf("%d ",vet[i]);
+    }
+    return 0;
+}

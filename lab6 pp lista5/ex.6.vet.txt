@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 6 - vetores
+
+int main()
+{
+    int i, j, vet[10];
+    for(i = 0; i < 10; i++){
+        printf("Digite o elemento da casa %d: \n", i);
+        scanf("%d", &vet[i]);
+    }
+    for (int i = 0; i < 10; i++)
+  {
+    int primo = 1;
+    for (int j = 2; j < vet[i]; j++)
+    {
+      if (vet[i] % j == 0)
+      {
+        primo = 0;
+        break;
+      }
+    }
+    if (primo)
+    {
+      printf("Posicao %d: %d\n", i, vet[i]);
+    }
+  }
+  return 0;
+}
