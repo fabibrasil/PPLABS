@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void Cebolinha(char dest[], char src[]){
+  int j,i,n;
+  char c;
+  n = strlen(src);
+  j = 0;
+  for(i = 0; i < n; i++){
+    if(src[i] == 'r' && src[i+1] >= 'a' && src[i+1] <= 'z'){
+      if(src[i+1] == 'r')
+        i++;
+      c = 'l';
+    }
+    else
+      c = src[i];
+
+    dest[j] = c;
+    j++;
+  }
+  dest[j] = '\0';
+}
+
+int main(){
+  char dest[500];
+  char src[100];
+  printf("Digite uma frase: \n");
+  fgets(src, 100, stdin);
+  Cebolinha(dest, src);
+  printf("%s\n", dest);
+
+  return 0;
+}
