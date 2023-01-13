@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main()
+{
+  int a = 0, *p1;
+  float b = 1.1, *p2;
+  char c = 'a', *p3;
+
+  p1 = &a;
+  p2 = &b;
+  p3 = &c;
+
+  printf("a = %d, b = %f, c = %c\n", a, b, c);
+
+  *p1 = 1;
+  *p2 = 2.2;
+  *p3 = 'b';
+
+  printf("a = %d, b = %f, c = %c\n", a, b, c);
+}

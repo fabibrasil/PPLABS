@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int obterMaior(int *array, int size);
+
+void main() {
+  int array[10];
+
+  for (int i = 0; i < 10; i++) {
+    scanf("%d", array + i);
+  }
+
+  printf("Maior: %d\n", obterMaior(array, 10));
+}
+
+int obterMaior(int *array, int size) {
+  int maior = *array;
+
+  for (int i = 1; i < size; i++) {
+    if (*(array + i) > maior) {
+      maior = *(array + i);
+    }
+  }
+
+  return maior;
+}
