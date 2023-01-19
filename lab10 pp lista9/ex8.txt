@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//exercicio 8
+
+int main() {
+    int i, contador = 0;
+    int* vetor = (int*) calloc(1500, sizeof(int)); // alocando memória dinamicamente e inicializando com 0
+
+    // contando os zeros no vetor
+    for (i = 0; i < 1500; i++) {
+        if (vetor[i] == 0) {
+            contador++;
+        }
+    }
+    printf("Quantidade de zeros no vetor: %d\n", contador);
+
+    // atribuindo valor do índice para cada elemento do vetor
+    for (i = 0; i < 1500; i++) {
+        vetor[i] = i;
+    }
+
+    // exibindo os 10 primeiros e os 10 últimos elementos do vetor
+    printf("10 primeiros elementos do vetor: [ ");
+    for (i = 0; i < 10; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("]\n");
+
+    printf("10 ultimos elementos do vetor: [ ");
+    for (i = 1490; i < 1500; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("]\n");
+
+    free(vetor); // liberando memória alocada dinamicamente
+    return 0;
+}

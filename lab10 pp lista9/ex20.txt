@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <math.h>
+
+struct Cidade {
+  char nome[100];
+  double x, y;
+};
+
+double distancia(double x1, double y1, double x2, double y2) {
+    double x = x2 - x1;
+    double y = y2 - y1;
+    return sqrt(x*x + y*y);
+}
+
+int main() {
+    int n;
+    printf("Informe o número de cidades: ");
+    scanf("%d", &n);
+
+    struct Cidade cidades[n];
+    double distancias[n][n];
+
+    for (int i = 0; i < n; i++) {
+        printf("Informe o nome e a posição (x y) da cidade %d: ", i+1);
+        scanf("%s %lf %lf", cidades[i].nome, &cidades[i].x, &cidades[i].y);
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            distancias[i][j] = distancia(cidades[i].x, cidades[i].y, cidades[j].x, cidades[j].y);
+        }
+    }
+
+    printf("\nMatriz de distâncias: \n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%.2lf ", distancias[i][j]);
+        }
+        printf("\n");
+    }
+
+    int c1, c2;
+    printf("\nInforme o número de duas cidades para obter a distância entre elas: ");
+    scanf("%d %d", &c1, &c2);
+    printf("Distância entre %s e %s é %.2lf", cidades[c1-1].nome, cidades[c2-1].nome, distancias[c1-1][c2-1]);
+    return 0;
+}
+
+
+
+

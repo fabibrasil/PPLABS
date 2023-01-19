@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int i, quantidade;
+    double* vetor;
+
+    printf("Entre com a quantidade de valores a serem armazenados: ");
+    scanf("%d", &quantidade);
+    if (quantidade < 10) {
+        quantidade = 10;
+    }
+
+    vetor = (double*) malloc(quantidade * sizeof(double)); // alocando memória dinamicamente
+
+    // atribuindo valores aleatórios entre 0 e 100 para os 10 primeiros elementos do vetor
+    for (i = 0; i < 10; i++) {
+        vetor[i] = (double) rand() / RAND_MAX * (100 - 0) + 0;
+    }
+
+    printf("Valores armazenados nos 10 primeiros elementos do vetor: [ ");
+    for (i = 0; i < 10; i++) {
+        printf("%.2lf ", vetor[i]);
+    }
+    printf("]\n");
+
+    free(vetor); // liberando memória alocada dinamicamente
+    return 0;
+}

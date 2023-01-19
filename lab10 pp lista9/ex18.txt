@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char *vetor1K;
+    int **matriz10x10;
+    struct produto {
+        char nome[30];
+        int codigo;
+        double preco;
+    } *vetorProdutos;
+    char **texto;
+
+    // alocando memória para o vetor de 1 Kbyte
+    vetor1K = (char*) malloc(1024 * sizeof(char));
+
+    // alocando memória para a matriz de inteiros 10x10
+    matriz10x10 = (int**) malloc(10 * sizeof(int*));
+    for (int i = 0; i < 10; i++) {
+        matriz10x10[i] = (int*) malloc(10 * sizeof(int));
+    }
+
+    // alocando memória para o vetor de 50 registros
+    vetorProdutos = (struct produto*) malloc(50 * sizeof(struct produto));
+
+    // alocando memória para o texto de até 100 linhas com até 80 caracteres
+    texto = (char**) malloc(100 * sizeof(char*));
+    for (int i = 0; i < 100; i++) {
+        texto[i] = (char*) malloc(80 * sizeof(char));
+    }
+
+    // aqui, você pode usar os blocos de dados alocados dinamicamente
+
+    // liberando memória alocada dinamicamente
+    free(vetor1K);
+    for (int i = 0; i < 10; i++) {
+        free(matriz10x10[i]);
+    }
+    free(matriz10x10);
+    free(vetorProdutos);
