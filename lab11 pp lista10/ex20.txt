@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char* argv[]) {
+    int num_alunos, i;
+    char **nomes;
+    float *notas;
+    FILE *arquivo;
+
+    printf("Informe o numero de alunos: ");
+    scanf("%d", &num_alunos);
+
+    // Alocando memória para os vetores
+    nomes = (char**) malloc(num_alunos * sizeof(char*));
+    notas = (float*) malloc(num_alunos * sizeof(float));
+
+    for (i = 0; i < num_alunos; i++) {
+        nomes[i] = (char*) malloc(41 * sizeof(char)); // 41 para armazenar o \0
+        printf("Informe o nome do aluno %d: ", i + 1);
+        scanf("%s", nomes[i]);
+        printf("Informe a nota final do aluno %d: ", i + 1);
+        scanf("%f", &notas[i]);
+    }
+
+    // Preenchendo os espaços vazios com espaço em branco
+    for (i = 0; i < num_alunos; i++) {
+        if (strlen(nomes[i]) < 40) {
+            int j;
+            for (j = strlen(nomes[i]); j < 40; j++) {
+                nomes[i][j] = ' ';
+            }
+            nomes[i][40] = '\0';
+        }
+    }
+
+    arquivo = fopen("arquivo_saida.txt", "w");
+    if (arquivo == NULL) {
+        printf("Erro ao criar o arquivo de saida.\n");
+        return 1;
+    }
+
+    // Escrevendo os dados no arquivo
+    for (i = 0; i < num_alunos; i++) {
+        fprintf(arquivo, "%s %.2f\n", nomes[i], notas[i]);
+    }
+
+    fclose(arquivo);
+
+    // Liberando a memória
+    for (i = 0; i < num_alunos; i++) {
+        free(nomes[i]);
+    }
+    free(nomes);
+    free(notas);
+
+    return 0;
+}

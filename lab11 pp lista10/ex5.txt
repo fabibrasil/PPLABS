@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    if (argc < 3) {
+        printf("Uso: %s <arquivo> <caractere>\n", argv[0]);
+        return 1;
+    }
+
+    char *arquivo = argv[1];
+    char caractere = argv[2][0];
+
+    FILE *fp = fopen(arquivo, "r");
+    if (!fp) {
+        printf("Erro ao abrir o arquivo %s\n", arquivo);
+        return 1;
+    }
+
+    int count = 0;
+    char c;
+    while ((c = fgetc(fp)) != EOF) {
+        if (c == caractere) {
+            count++;
+        }
+    }
+
+    printf("O caractere '%c' aparece %d vezes no arquivo %s\n", caractere, count, arquivo);
+
+    fclose(fp);
+    return 0;
+}

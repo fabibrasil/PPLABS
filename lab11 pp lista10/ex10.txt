@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char* argv[]) {
+    // Verifica se foram passados 2 argumentos (nome do arquivo de entrada e saída)
+    if (argc < 3) {
+        printf("Uso: %s <arquivo_entrada> <arquivo_saida>\n", argv[0]);
+        return 1;
+    }
+
+    // Abre arquivo de entrada
+    FILE* entrada = fopen(argv[1], "r");
+    if (!entrada) {
+        printf("Erro ao abrir arquivo de entrada\n");
+        return 1;
+    }
+
+    // Inicializa variáveis para armazenar a cidade e população mais alta
+    char cidade_mais_populosa[41];
+    cidade_mais_populosa[40] = '\0';
+    int populacao_mais_alta = 0;
+
+    // Lê cada linha do arquivo
+    char linha[41];
+    int populacao;
+    while (fscanf(entrada, "%40s %d", linha, &populacao) == 2) {
+        // Verifica se a cidade atual tem população maior
+        if (populacao > populacao_mais_alta) {
+            populacao_mais_alta = populacao;
+            strcpy(cidade_mais_populosa, linha);
+        }
+    }
+    fclose(entrada);
+
+    // Abre arquivo de saída
+    FILE* saida = fopen(argv[2], "w");
+    if (!saida) {
+        printf("Erro ao abrir arquivo de saída\n");
+        return 1;
+    }
+
+    // Escreve resultado no arquivo de saída
+    fprintf(saida, "%s %d\n", cidade_mais_populosa, populacao_mais_alta);
+    fclose(saida);
+
+    return 0;
+}

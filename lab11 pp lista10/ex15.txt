@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char *argv[]) {
+    if (argc < 4) {
+        printf("Uso: %s ano_corrente arquivo_entrada arquivo_saida\n", argv[0]);
+        return 1;
+    }
+
+    int ano_corrente = atoi(argv[1]);
+    char *nome_arquivo_entrada = argv[2];
+    char *nome_arquivo_saida = argv[3];
+
+    FILE *arquivo_entrada = fopen(nome_arquivo_entrada, "r");
+    FILE *arquivo_saida = fopen(nome_arquivo_saida, "w");
+
+    char nome[41];
+    int ano_nascimento;
+    while (fscanf(arquivo_entrada, "%40s %d", nome, &ano_nascimento) == 2) {
+        int idade = ano_corrente - ano_nascimento;
+        char *mensagem;
+        if (idade < 18) {
+            mensagem = "menor de idade";
+        } else if (idade == 18) {
+            mensagem = "entrando na maior idade";
+        } else {
+            mensagem = "maior de idade";
+        }
+        fprintf(arquivo_saida, "%s %s\n", nome, mensagem);
+    }
+
+    fclose(arquivo_entrada);
+    fclose(arquivo_saida);
+
+    return 0;
+}
